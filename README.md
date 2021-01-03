@@ -392,7 +392,7 @@ modifications:
     
     
 ## Magma colormap
-![](./images/Magme_no.png "Magma gradient ( colormap)")  
+![](./images/Magma_no.png "Magma gradient ( colormap)")  
 ![](./images/Magma_no_2D.png "RGB profiles of the Magma colormap")    
 
 c function = GiveMagmaColor from [p.c file](./src/p.c)  
@@ -400,12 +400,12 @@ c function = GiveMagmaColor from [p.c file](./src/p.c)
 lightness is monotone  
 
 Steps:  
-![](./images/Magme_steps.png "Magma gradient ( colormap)")  
+![](./images/Magma_steps.png "Magma gradient ( colormap)")  
 ![](./images/Magma_steps_2D.png "RGB profiles of the Magma colormap")    
 
 
 Tubes:  
-![](./images/Magme_tubes.png "Magma gradient ( colormap)")  
+![](./images/Magma_tubes.png "Magma gradient ( colormap)")  
 ![](./images/Magma_tubes_2D.png "RGB profiles of the Magma colormap")    
 
 ## RainbowFractalizer
