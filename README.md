@@ -44,7 +44,7 @@ mkdir images
 git add *.png
 git mv  *.png ./images
 git commit -m "move"
-git push -u origin master
+git push -u origin main
 ```
 then link the images:
 
