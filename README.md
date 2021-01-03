@@ -47,6 +47,36 @@ Gradient function:
   * [continous](https://en.wikipedia.org/wiki/Continuous_function) ( gives tubes , 3d effect): gradient function can be inverted and joined ( both inverted and not inverted part create one wave), repeat it 
   * [discontinous with jump](https://en.wikipedia.org/wiki/Classification_of_discontinuities#Jump_discontinuity) -  [step function](https://en.wikipedia.org/wiki/Step_function) , ( gives [steps](https://en.wikipedia.org/wiki/Stairs#Step)): gradient function can be joined without inversion( 2 non inverted parts are joined, each part is one wave), repeat it  
   
+```c
+double ModifyPosition(const double position, const GradientJoiningType GradientJoining){
+	
+	// input position  should be in  [0,1] range 
+	double p = position; // p = local copy of position
+	// if position > 1 then we have repetition of colors = periodic function = wave   
+	
+	
+	switch(GradientJoining){
+	
+		case no : {break;} // return input position witout modifications
+		
+		// periodic waves with different joinings
+		case steps : {	p = p * segments; // periodic  = change range
+				p = frac(p); 
+    				break;}
+    				
+		case tubes : {	p = p * segments; // periodic = change range
+				int ip = (int)p;
+      				p = p-ip; // fractional part 
+      				if (ip % 2) {p = 1.0-p;} // reverse gradient
+				break;}
+		default:{}
+	}
+	return p; // output in [0,1] range
+}
+```    
+
+  
+  
   
 Step function:
 * highliths the boundaries of level sets
@@ -524,32 +554,29 @@ code and description is in the [commons](https://commons.wikimedia.org/wiki/File
 
 
 
-## GraySine: effect of a sine wave 
+## Gray Sin: effect of a sine wave 
 
 only ascending wave ( f = 1/2)  
 
-![](./images/GraySine_half.png "GraySine gradient - only ascending wave ")  
-![](./images/GraySine_half_2D.png "RGB profiles of the GraySine colormap")    
+![](./images/Sin_no.png "GraySine gradient - only ascending wave ")  
+![](./images/Sin_no_2D.png "RGB profiles of the GraySine colormap")    
 
 
 Adam Sakareassen : "The colours simply fade from black to white in a cycle.  This wave is generated with the sin function.  This method is useful when blending layers to create light to dark contrasts."
 
- f = 1   
 
-![](./images/GraySine1.png "GraySine gradient ( colormap)")  
-![](./images/GraySine1_2D.png "RGB profiles of the GraySine colormap")    
+   
+Steps:  
+![](./images/Sin_steps.png "GraySine gradient ( colormap)")  
+![](./images/Sin_steps_2D.png "RGB profiles of the GraySine colormap")    
 
- f = 4  
-![](./images/GraySine4.png "GraySine gradient ( colormap)")  
-![](./images/GraySine4_2D.png "RGB profiles of the GraySine colormap")    
-
-
-
-![](./images/GraySine.png "GraySine gradient ( colormap)")  
-![](./images/GraySine2D.png "RGB profiles of the GraySine colormap")    
+Tubes:   
+![](./images/Sin_tubes.png "GraySine gradient ( colormap)")  
+![](./images/Sin_tubes_2D.png "RGB profiles of the GraySine colormap")    
+  
 
 
-c function = GiveGraySine from [d.c file](./src/d.c)  
+c function = GiveRGB_Gray from [d.c file](./src/d.c)  
 
 
 
