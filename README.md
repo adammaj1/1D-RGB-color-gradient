@@ -64,12 +64,6 @@ Example videos by [Maths Town](https://www.youtube.com/channel/UC6qEdtxp_IAaVrNA
 
   
 # Examples of 1D colour maps/gradients ( mostly continous)
-All my images here are made with 
-* c console program with gradients made of functions
-* Image Magic convert console program
-* gnuplot scripts
-
-[Source code of all programs](README.md#files) 
   
 Examples by hue:
 * ``Multihue = rainbows``
@@ -89,23 +83,54 @@ Examples by hue:
     * [Bent Cool Warm](README.md#bent-cool-warm-diverging-)
     * [arctic](README.md#arctic)
 * ``NoHue = Gray``
-  * GrayL 
-  * [GrayLSin 
-  * GrayLSinExp
+  * Linear 
+  * SinExp
   * [GraySine](README.md#graysine-effect-of-a-sine-wave) ( similar to SmoothStep = 25 and SmoothSteps= 26 )
-  * GrayNL2 
-  * GrayNL3 
-  * GraySqrt 
-  * GrayGamma 
-  * GrayNL3Wave2
-  * GrayNL3Wave10
-  * GraySqrtWave
-  * GrayLWave
-  * GrayLWaveInverted
-  * GrayNL3Wave5NonInv
+  * NL2 
+  * NL3 
+  * Sqrt 
+  * Gamma 
 * ``single hue``
   * [Green](README.md#green-colormap) - monotne lightness
   * HSP 
+  
+```c
+// d.c 
+		// multihue		
+  		case RainbowHSV: 	{GiveRGB_RainbowHSV(p, rgb); break;}
+  		case Linas: 		{GiveRGB_Linas(p, rgb); break;}
+  		case Linas2: 		{GiveRGB_Linas2(p, rgb); break;}
+  		case RainbowFractalizer:{GiveRGB_RainbowFractalizer(p, rgb); break;} //
+  		case OrangeBlueFractalizer: {GiveRGB_OrangeBlueFractalizer(p, rgb); break;} 
+  		case Magma: 		{GiveRGB_Magma(p, rgb); break;}
+  		case Cubehelix:	{GiveRGB_Cubehelix(p, rgb); break;}
+  		case RainbowHSP: 	{GiveRGB_RainbowHSP(p, rgb); break;}
+  		case HSP:	 	{GiveRGB_HSP(p, rgb); break;}
+  		// diverging 
+  		case CoolWarm: 	{GiveRGB_CoolWarm(p, rgb); break;}
+  		// single hue
+  		case GreenCubic: 		{GiveRGB_GreenCubic(p, rgb); break;}
+  		case GreenCubicInv: 		{GiveRGB_GreenCubicInv(p, rgb); break;}
+  		case GreenCubicRoot: 		{GiveRGB_GreenCubicRoot(p, rgb); break;}
+  		case BlueCubicInv: 		{GiveRGB_BlueCubicInv(p, rgb); break;}
+  		case RedCubicInv: 		{GiveRGB_RedCubicInv(p, rgb); break;}
+  		case GreenSin: 		{GiveRGB_GreenSin(p, rgb); break;}
+  		 
+  		// no hue = gray, one function for all gray gradients
+  		case Linear: 	
+  		case Quadratic: 	
+  		case Cubic: 
+  		case CubicInv:		
+  		case Sqrt: 
+  		case Root:		
+  		case Gamma: 		
+  		case Sin: 		
+  		case LSin: 		
+  		case SinExp: 	
+  		case Smooth: 	{GiveRGB_Gray(p, ColorTransferFunction, rgb); break;}  
+```
+  
+  
 
 
 ## Rainbow colormap or sawtooth rainbow or hsv
@@ -117,7 +142,7 @@ Rainbow
 
 
 ![](./images/RainbowHSV_no.png "Rainbow gradient ( colormap)")  
-![](./images/RainbowHSV_no_2d.png "RGB profiles of the rainbow colormap")  
+![](./images/RainbowHSV_no_2D.png "RGB profiles of the rainbow colormap")  
 
 
 Compare with [gnuplot image](https://commons.wikimedia.org/wiki/File:Gnuplot_HSV_gradient.png)  
@@ -709,24 +734,6 @@ See:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # guide to working with the source code
 
 
@@ -743,12 +750,26 @@ How to compile and run is described in the comments of c files
 
 ## files
 
+All my images here are made with 
+* c console program with gradients made of functions
+* Image Magic convert console program
+* gnuplot scripts
+
+to make all images go to src directory and:
+```
+make
+```
+
+
 ### programs
+[Makefile](./src/Makefile)
+
 c console programs:
+* [d.c](./src/d.c) - c program with similar to p.c but with output in range [0,1]
+* [s.c](./src/s.c) - c progrm for create enum from array of strings (lazy and naive method but works for me)
 * [p.c](./src/p.c) - c program with output in range [0,255].  It creates 2 files (*.ppm and *.txt) for each colormap ( explicit transfer function)  
 * [h.c](./src/h.c) - c code for creating *.txt files with data. It converts hsv to rgb 
 * [j.c](./src/j.c) - c program which creates gradient files in json format for [colormeasure ](https://colormeasures.org/viewer/).  It uses explicit transfer functions. Output is in [0,1] range 
-* [d.c](./src/d.c) - c program with similar to p.c but with output in range [0,1]
 
 gnuplot programs
 * [plot.gp](./src/plot.gp) - gnuplot program which creates *.png fils from *.txt files
