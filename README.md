@@ -392,12 +392,21 @@ modifications:
     
     
 ## Magma colormap
-![](./images/602.png "Magma gradient ( colormap)")  
-![](./images/2.png "RGB profiles of the Magma colormap")    
+![](./images/Magme_no.png "Magma gradient ( colormap)")  
+![](./images/Magma_no_2D.png "RGB profiles of the Magma colormap")    
 
 c function = GiveMagmaColor from [p.c file](./src/p.c)  
 
 lightness is monotone  
+
+Steps:  
+![](./images/Magme_steps.png "Magma gradient ( colormap)")  
+![](./images/Magma_steps_2D.png "RGB profiles of the Magma colormap")    
+
+
+Tubes:  
+![](./images/Magme_tubes.png "Magma gradient ( colormap)")  
+![](./images/Magma_tubes_2D.png "RGB profiles of the Magma colormap")    
 
 ## RainbowFractalizer
 
@@ -408,11 +417,23 @@ It has [7 segments and black color](https://graphicdesign.stackexchange.com/ques
 lightness is non monotone  
 
 
-![](./images/RainbowFractalizer.png " RainbowFractalizer gradient ( colormap)")  
-![](./images/RainbowFractalizer2D.png "2D RGB profiles of the RainbowFractalizer colormap")    
+![](./images/RainbowFractalizer_no.png " RainbowFractalizer gradient ( colormap)")  
+![](./images/RainbowFractalizer_no_2D.png "2D RGB profiles of the RainbowFractalizer colormap")    
 
 
 c function = GiveRainbowFractalizer from [d.c file](./src/d.c)  
+
+Steps:  
+![](./images/RainbowFractalizer_steps.png " RainbowFractalizer gradient ( colormap)")  
+![](./images/RainbowFractalizer_steps_2D.png "2D RGB profiles of the RainbowFractalizer colormap")    
+
+Tubes:  
+![](./images/RainbowFractalizer_tubes.png " RainbowFractalizer gradient ( colormap)")  
+![](./images/RainbowFractalizer_tubes_2D.png "2D RGB profiles of the RainbowFractalizer colormap")    
+
+
+
+
 
 See also:
 * [images at commons](https://commons.wikimedia.org/wiki/Category:Fractals_made_with_Fractalizer)
@@ -767,6 +788,10 @@ See:
 
 
 # guide to working with the source code
+
+## conventions
+* image file names = ColorTransferFunction_GradientJoining[_2D].png wher optional part 2D means 2D profiles of color
+* ColorTransferFunction takes input in [0,1] and gives output in [0,1] range 
 
 
 ## API Reference
