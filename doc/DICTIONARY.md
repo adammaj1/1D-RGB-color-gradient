@@ -86,7 +86,7 @@ By playing around with Photoshop’s RGB-to-Greyscale mode conversion, I determi
 * [perceptualu uniform](https://programmingdesignsystems.com/color/perceptually-uniform-color-spaces/): 
   * CIELAB color space for the characterization of colored surfaces and dyes 
   * CIELUV color space for the characterization of color displays 
-    * [HSLUV](http://www.hsluv.org/)
+    * [HSLUV](http://www.hsluv.org/) and [hsluv-c](https://github.com/hsluv/hsluv-c)
   * [Kodak ProPhoto RGB, Adobe RGB (1998) and sRGB are examples of gray balanced and perceptually uniform RGB working color space ](http://colormanaging.blogspot.com/2010/12/ideal-color-space.html)
 * [Gray balanced means that equal RGB numbers always produce a neutral gray ](http://colormanaging.blogspot.com/2010/12/ideal-color-space.html)
 * [HSP by Darel Rex Finley](http://alienryderflex.com/hsp.html) 

@@ -955,10 +955,21 @@ pal files ( files with gnuplot code, use load command )
 json files in [src dir](./src/) for [colormeasure ](https://colormeasures.org/viewer/)
  
 # similar projects
+* [cmlib](https://github.com/titusjan/cmlib) - color map library is a collection of color maps that have been converted to a uniform format ( csv+json)
 * [COLOR RAMP FORMULATOR in js by ](https://github.com/tonton-pixel/color-ramp-formulator) Michel Mariani (tonton-pixel )
-
-
-
+* [ColorRampGenerator](https://github.com/Exerionius/ColorRampGenerator) - to make a color ramp out of the base color ( Sequential Discrete color gradient)
+* [colorcet](https://github.com/holoviz/colorcet) - perceptually uniform colormaps for use with Python based on the set of perceptually uniform colormaps created by Peter Kovesi 
+* [viscm](https://github.com/matplotlib/viscm) - tool for analyzing colormaps and creating new colormaps
+* [CMasher](https://github.com/1313e/CMasher) - a collection of scientific colormaps and utility functions ( Python)
+* [bipolar-colormap](https://github.com/endolith/bipolar-colormap) - diverging
+* [gimp-color-palettes](https://github.com/Robert-96/gimp-color-palettes)
+* [colormap-shaders](https://github.com/kbinani/colormap-shaders)
+* [pycolormap](https://github.com/yuki-koyama/pycolormap)
+* [tinycolormap](https://github.com/yuki-koyama/tinycolormap)
+* [cppcolormap](https://github.com/tdegeus/cppcolormap)
+* [ColorMap](https://github.com/alesgenova/colormap) - A flexible library to map numerical values to colors ( opacity and color)
+* [colorgrad](https://github.com/mazznoer/colorgrad)
+* [SciColorMaps](https://github.com/ar1st0crat/SciColorMaps)
 # technical notes
 I'm not an expert in the color, so many errors can be here. If you will find them let me know: issues or [wikibooks](https://en.wikibooks.org/wiki/User_talk:Adam_majewski)
 
