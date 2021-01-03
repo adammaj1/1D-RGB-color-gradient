@@ -234,6 +234,16 @@ def rainbow():
 *  GiveRainbowColor from [p.c file](./src/p.c)  
 *  ComputeAndPrintColor from [h.c file](./src/h.c) which uses gnuplot function HSV_2_RGB from file [src/getcolor.c](https://sourceforge.net/p/gnuplot/gnuplot-main/ci/master/tree/src/getcolor.c)
 
+### modifications
+
+
+![](./images/RainbowHSV_steps.png "Rainbow gradient ( colormap)")  
+![](./images/RainbowHSV_steps_2D.png "RGB profiles of the rainbow colormap")  
+
+![](./images/RainbowHSV_tubes.png "Rainbow gradient ( colormap)")  
+![](./images/RainbowHSV_tubes_2D.png "RGB profiles of the rainbow colormap")  
+
+
 
 ### See also
 * [CIE LAB LINEAR L* RAINBOW](https://mycarta.wordpress.com/2012/12/06/the-rainbow-is-deadlong-live-the-rainbow-part-5-cie-lab-linear-l-rainbow/)
