@@ -604,7 +604,7 @@ Examples of use :
 ## Gray LSine: effect of [a sine wave superimposed on a ramp function](https://peterkovesi.com/projects/colourmaps/colourmaptestimage.html)
 
 ![](./images/LSin_no.png "GrayLSine gradient ( colormap)")  
-![](./images/LSine_no_2D.png "RGB profiles of the GrayLSine colormap")    
+![](./images/LSin_no_2D.png "RGB profiles of the GrayLSine colormap")    
 
 
 c function = GiveGrayColorLSine from [d.c file](./src/d.c)  
@@ -670,35 +670,35 @@ Tubes:
 
 ## Gray NL3 =Cubic colormap
 ![](./images/Cubic_no.png "GrayNL3 gradient ( colormap)")  
-![](./images/Cubic_no_2d.png "RGB profiles of the GrayNL3 colormap")  
+![](./images/Cubic_no_2D.png "RGB profiles of the GrayNL3 colormap")  
 
 
 
 Steps:  
 ![](./images/Cubic_steps.png "GrayNL3 gradient ( colormap)")  
-![](./images/Cubic_steps_2d.png "RGB profiles of the GrayNL3 colormap")  
+![](./images/Cubic_steps_2D.png "RGB profiles of the GrayNL3 colormap")  
 
 
 Tubes:  
 ![](./images/Cubic_tubes.png "GrayNL3 gradient ( colormap)")  
-![](./images/Cubic_tubes_2d.png "RGB profiles of the GrayNL3 colormap")  
+![](./images/Cubic_tubes_2D.png "RGB profiles of the GrayNL3 colormap")  
 
 
 ## CubicInv
 
 ![](./images/CubicInv_no.png "GrayNL3 gradient ( colormap)")  
-![](./images/CubicInv_no_2d.png "RGB profiles of the GrayNL3 colormap")  
+![](./images/CubicInv_no_2D.png "RGB profiles of the GrayNL3 colormap")  
 
 
 
 Steps:  
 ![](./images/CubicInv_steps.png "GrayNL3 gradient ( colormap)")  
-![](./images/CubicInv_steps_2d.png "RGB profiles of the GrayNL3 colormap")  
+![](./images/CubicInv_steps_2D.png "RGB profiles of the GrayNL3 colormap")  
 
 
 Tubes:  
 ![](./images/CubicInv_tubes.png "GrayNL3 gradient ( colormap)")  
-![](./images/CubicInv_tubes_2d.png "RGB profiles of the GrayNL3 colormap")  
+![](./images/CubicInv_tubes_2D.png "RGB profiles of the GrayNL3 colormap")  
   
 ## GrayGamma 
 Nonlinear gamma-corrected black and white palette
