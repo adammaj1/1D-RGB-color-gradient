@@ -282,8 +282,12 @@ var spaces = [
 ```
 
 ## Linas colormap
-![](./images/601.png "Old Linas gradient ( colormap)")  
-![](./images/1.png "RGB profiles of the old Linas colormap")  
+
+
+
+
+![](./images/Linas_no.png "Old Linas gradient ( colormap)")  
+![](./images/Linas_no_2D.png "RGB profiles of the old Linas colormap")  
 
 
 >Your new colormap is different and ugly-ish. The line between red-and-yellow is much much worse than before.  the red-yellow discontinuity is ... confusing, annoying. .. to me, at least. Linas
@@ -353,8 +357,8 @@ Now one can compute: 4 functions for each color channel ( 12 functions) using [p
 Result:   
 
 
-![](./images/608.png "New Linas gradient ( colormap)")  
-![](./images/8.png "RGB profiles of the New Linas colormap")  
+![](./images/Linas2_no.png "New Linas gradient ( colormap)")  
+![](./images/Linas2_no_2D.png "RGB profiles of the New Linas colormap")  
 
 
 
@@ -366,6 +370,24 @@ C code for Linas gradient:
 
 
 Examples of use: [Linas art gallery - my version of Linas programs with old gradient](https://gitlab.com/adammajewski/LinasArtGallery_MandelbrotSet)
+
+
+modifications:
+
+![](./images/Linas_steps.png "Old Linas gradient ( colormap)")  
+![](./images/Linas_steps_2D.png "RGB profiles of the old Linas colormap")  
+
+
+![](./images/Linas_tubes.png "Old Linas gradient ( colormap)")  
+![](./images/Linas_tubes_2D.png "RGB profiles of the old Linas colormap")  
+
+
+![](./images/Linas2_steps.png "Linas2 gradient ( colormap)")  
+![](./images/Linas2_steps_2D.png "RGB profiles of the old Linas colormap")  
+
+
+![](./images/Linas2_tubes.png "Linas2 gradient ( colormap)")  
+![](./images/Linas2_tubes_2D.png "RGB profiles of the old Linas colormap")  
 
     
     
