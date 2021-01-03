@@ -458,11 +458,27 @@ Features:
 
   
 
-![](./images/OrangeBlueFractalizer.png " OrangeBlueFractalizer gradient ( colormap)")  
-![](./images/OrangeBlueFractalizer2D.png "2D RGB profiles of the OrangeBlueFractalizer colormap")    
+![](./images/OrangeBlueFractalizer_no.png " OrangeBlueFractalizer gradient ( colormap)")  
+![](./images/OrangeBlueFractalizer_no_2D.png "2D RGB profiles of the OrangeBlueFractalizer colormap")    
 
 
 c function = GiveOrangeBlueFractalizer from [d.c file](./src/d.c)  
+
+
+Steps:  
+
+![](./images/OrangeBlueFractalizer_steps.png " OrangeBlueFractalizer gradient ( colormap)")  
+![](./images/OrangeBlueFractalizer_steps_2D.png "2D RGB profiles of the OrangeBlueFractalizer colormap")    
+
+
+Tubes:  
+
+![](./images/OrangeBlueFractalizer_tubes.png " OrangeBlueFractalizer gradient ( colormap)")  
+![](./images/OrangeBlueFractalizer_tubes_2D.png "2D RGB profiles of the OrangeBlueFractalizer colormap")    
+
+
+
+
 
 See also:
 * [images at commons](https://commons.wikimedia.org/wiki/Category:Fractals_made_with_Fractalizer)
@@ -470,14 +486,16 @@ See also:
 
 
 
-## GrayL colormap
+## Gray Linear colormap
 Linear function
 
-![](./images/603.png "GrayL gradient ( colormap)")  
-![](./images/3.png "RGB profiles of the GrayL colormap")    
+![](./images/Linear_no.png "Gray Linear gradient ( colormap)")  
+![](./images/Linear_no_2D.png "RGB profiles of the GrayL colormap")    
 
 
-c function = GiveGrayColorL from [p.c file](./src/p.c)  
+c function:  
+* (old) GiveGrayColorL from [p.c file](./src/p.c)  
+* (new) GiveRGB_Gray case Linear from [d.c file](./src/d.c)  
 
 
 
@@ -486,10 +504,14 @@ c function = GiveGrayColorL from [p.c file](./src/p.c)
 Effect of joining gradients ( segments of the same gradient combined):   
 * [Sawtooth wave](https://en.wikipedia.org/wiki/Sawtooth_wave)
 
-![](./images/614.png "GrayLWave gradient ( colormap)")  
-![](./images/14.png "RGB profiles of the GrayLWave colormap")    
+Steps:  
+![](./images/Linear_steps.png "Gray Linear gradient ( colormap)")  
+![](./images/Linear_steps_2D.png "RGB profiles of the GrayL colormap")    
 
-c function = GiveGrayColorLWave from [p.c file](./src/p.c)  
+
+Tubes:   
+![](./images/Linear_tubes.png "Gray Linear gradient ( colormap)")  
+![](./images/Linear_tubes_2D.png "RGB profiles of the GrayL colormap")    
 
 
 Example image with use of such gradient:  
@@ -497,14 +519,6 @@ Example image with use of such gradient:
 ![](./images/siegel.png "")  
 
 code and description is in the [commons](https://commons.wikimedia.org/wiki/File:Quadratic_Golden_Mean_Siegel_Disc_Average_Velocity_-_Gray.png)
-
-Effect of joining gradients ( pairs of plain and inverted gradients ):   
-
-![](./images/615.png "GrayLWave inverted gradient ( colormap)")  
-![](./images/15.png "RGB profiles of the GrayLWave inverted colormap")    
-
-
-c function = GiveGrayColorLWaveInverted from [p.c file](./src/p.c)  
 
 
 
