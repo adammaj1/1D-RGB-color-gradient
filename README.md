@@ -116,18 +116,17 @@ Rainbow
 * "One minor problem is that (true) rainbows end in violet, not red." – AnnanFay 
 
 
-![](./images/600.png "Rainbow gradient ( colormap)")  
-![](./images/0.png "RGB profiles of the rainbow colormap")  
+![](./images/RainbowHSV_no.png "Rainbow gradient ( colormap)")  
+![](./images/RainbowHSV_no_2d.png "RGB profiles of the rainbow colormap")  
 
 
 Compare with [gnuplot image](https://commons.wikimedia.org/wiki/File:Gnuplot_HSV_gradient.png)  
 
-![](./images/Gnuplot_HSV_gradient.png "RGB profiles and image of the HSV gradient made with gnuplot")  
-
-It looks similar. sawtooth-shaped lightness profile made up of 6 ramps ( segments)
 
 Features of rainbow gradient:
-* non monotone ( see black curve) , cyclic, multi hue
+* non monotone ( see black curve) , 
+* cyclic
+* multi hue
 * complex = consist of 6 monotone segments ( ramps). Graph of the lightness looks like [saw with  plain tooth pattern](https://en.wikipedia.org/wiki/Crosscut_saw) or [triangle sawtooth wave](https://en.wikipedia.org/wiki/Sawtooth_wave)
 
 
