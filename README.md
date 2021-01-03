@@ -601,24 +601,32 @@ Examples of use :
 
 
 
-## GrayLSine: effect of [a sine wave superimposed on a ramp function](https://peterkovesi.com/projects/colourmaps/colourmaptestimage.html)
+## Gray LSine: effect of [a sine wave superimposed on a ramp function](https://peterkovesi.com/projects/colourmaps/colourmaptestimage.html)
 
-![](./images/GrayLSine.png "GrayLSine gradient ( colormap)")  
-![](./images/GrayLSine2D.png "RGB profiles of the GrayLSine colormap")    
+![](./images/LSin_no.png "GrayLSine gradient ( colormap)")  
+![](./images/LSine_no_2D.png "RGB profiles of the GrayLSine colormap")    
 
 
 c function = GiveGrayColorLSine from [d.c file](./src/d.c)  
 
+Steps:  
+![](./images/LSin_steps.png "GrayLSine gradient ( colormap)")  
+![](./images/LSin_steps_2D.png "RGB profiles of the GrayLSine colormap")    
 
 
-## GrayLSineExp: effect of [a sine(exp) wave ](https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/channels/channels.html)
+Tubes:  
+![](./images/LSin_tubes.png "GrayLSine gradient ( colormap)")  
+![](./images/LSin_tubes_2D.png "RGB profiles of the GrayLSine colormap")    
+
+
+## Gray SinExp: effect of [a sine(exp) wave ](https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/channels/channels.html)
 
 An exponential [chirp waveform](https://en.wikipedia.org/wiki/Chirp); a sinusoidal wave that increases in frequency exponentially over time
 
 
 
-![](./images/GrayLSineExp.png "GrayLSineExp gradient ( colormap)")  
-![](./images/GrayLSineExp2D.png "RGB profiles of the GrayLSineExp colormap")    
+![](./images/SinExp_no.png "GrayLSineExp gradient ( colormap)")  
+![](./images/SinExp_no_2D.png "RGB profiles of the GrayLSineExp colormap")    
 
 
 c function = GiveGrayColorLSineExp from [d.c file](./src/d.c)  
@@ -629,6 +637,14 @@ See als:
 * Inverse Logarithmic Filter Sweep
 
 
+Steps:  
+![](./images/SinExp_steps.png "GrayLSineExp gradient ( colormap)")  
+![](./images/SinExp_steps_2D.png "RGB profiles of the GrayLSineExp colormap")    
+
+
+Tubes:  
+![](./images/SinExp_tubes.png "GrayLSineExp gradient ( colormap)")  
+![](./images/SinExp_tubes_2D.png "RGB profiles of the GrayLSineExp colormap")    
 
 
 
@@ -639,45 +655,56 @@ see also:
 * [sigmoid grayscale colormaps](https://github.com/mycarta/Sigmoid_app)
 * [Junpei Sekino](http://www.sekinoworld.com/fractal/#story)
 
-## GrayNL2 colormap
-![](./images/604.png "GrayNL2 gradient ( colormap)")  
-![](./images/4.png "RGB profiles of the GrayNL2 colormap")  
+## Gray NL2 = Quadratic colormap
+![](./images/Quadratic_no.png "GrayNL2 gradient ( colormap)")  
+![](./images/Quadratic_no_2D.png "RGB profiles of the GrayNL2 colormap")  
 
-c function = GiveGrayColorNL2 from [p.c file](./src/p.c)  
+Steps:  
+![](./images/Quadratic_steps.png "GrayNL2 gradient ( colormap)")  
+![](./images/Quadratic_steps_2D.png "RGB profiles of the GrayNL2 colormap")  
 
-## GrayNL3 colormap
-![](./images/605.png "GrayNL3 gradient ( colormap)")  
-![](./images/5.png "RGB profiles of the GrayNL3 colormap")  
-
-c function = GiveGrayColorNL3 from [p.c file](./src/p.c)  
-
-Gradient can be inverted and joined ( both inverted and not inverted part create one wave):  
-
-![](./images/611.png " 1 wave ( 2 segments) GrayNL3 gradient ( colormap)")  
-![](./images/11.png "RGB profiles of the 1 wave ( 2 segments) GrayNL3 colormap")  
-
-c function :
-* GiveGrayColorNL3Wave2 from [p.c file](./src/p.c)
-* GiveGrayColorNL3Wave10 from [p.c file](./src/p.c) 
+Tubes:  
+![](./images/Quadratic_tubes.png "GrayNL2 gradient ( colormap)")  
+![](./images/Quadratic_tubes_2D.png "RGB profiles of the GrayNL2 colormap")  
 
 
-![](./images/612.png "5 waves ( 10 segments) GrayNL3 gradient ( colormap)")  
-![](./images/12.png "RGB profiles of the 5 waves GrayNL3 colormap")  
+## Gray NL3 =Cubic colormap
+![](./images/Cubic_no.png "GrayNL3 gradient ( colormap)")  
+![](./images/Cubic_no_2d.png "RGB profiles of the GrayNL3 colormap")  
 
 
 
-Not inverted:
+Steps:  
+![](./images/Cubic_steps.png "GrayNL3 gradient ( colormap)")  
+![](./images/Cubic_steps_2d.png "RGB profiles of the GrayNL3 colormap")  
 
-![](./images/616.png "2.5 waves ( 5 segments) GrayNL3 not invertedgradient ( colormap)")  
-![](./images/16.png "RGB profiles of the 2.5 waves GrayNL3 not inverted colormap")  
+
+Tubes:  
+![](./images/Cubic_tubes.png "GrayNL3 gradient ( colormap)")  
+![](./images/Cubic_tubes_2d.png "RGB profiles of the GrayNL3 colormap")  
 
 
-c function = GiveGrayColorNL3Wave5NonInv from [p.c file](./src/p.c)  
+## CubicInv
+
+![](./images/CubicInv_no.png "GrayNL3 gradient ( colormap)")  
+![](./images/CubicInv_no_2d.png "RGB profiles of the GrayNL3 colormap")  
+
+
+
+Steps:  
+![](./images/CubicInv_steps.png "GrayNL3 gradient ( colormap)")  
+![](./images/CubicInv_steps_2d.png "RGB profiles of the GrayNL3 colormap")  
+
+
+Tubes:  
+![](./images/CubicInv_tubes.png "GrayNL3 gradient ( colormap)")  
+![](./images/CubicInv_tubes_2d.png "RGB profiles of the GrayNL3 colormap")  
+  
 ## GrayGamma 
 Nonlinear gamma-corrected black and white palette
 
-![](./images/610.png "GrayGamma gradient ( colormap)")  
-![](./images/10.png "RGB profiles of the GrayGamma colormap")  
+![](./images/Gamma_no.png "GrayGamma gradient ( colormap)")  
+![](./images/Gamma_no_2D.png "RGB profiles of the GrayGamma colormap")  
 
 
 It is from gnuplot:
@@ -688,7 +715,18 @@ set palette model RGB functions color(gray), color(gray), color(gray) # A gamma-
 
 ```
 
-c function = GiveGrayGammaColor from [p.c file](./src/p.c)  
+Steps:  
+
+![](./images/Gamma_steps.png "GrayGamma gradient ( colormap)")  
+![](./images/Gamma_steps_2D.png "RGB profiles of the GrayGamma colormap")  
+
+
+Tubes:  
+
+![](./images/Gamma_tubes.png "GrayGamma gradient ( colormap)")  
+![](./images/Gamma_tubes_2D.png "RGB profiles of the GrayGamma colormap")  
+
+
 
 ## GraySqrt colormap
 ![](./images/606.png "GraySqrt gradient ( colormap)")  
