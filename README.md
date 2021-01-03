@@ -78,7 +78,7 @@ double ModifyPosition(const double position, const GradientJoiningType GradientJ
   
   
   
-Step function:
+## Step function:
 * highliths the boundaries of level sets
 
 Examples
@@ -88,7 +88,10 @@ Examples
 Example videos by [Maths Town](https://www.youtube.com/channel/UC6qEdtxp_IAaVrNAHUIhHbQ):
 * [Steps to Infinity - Mandelbrot Fractal Zoom (2e1289) - with "'''angle'''" shading for a psuedo-3D effect](https://www.youtube.com/watch?v=r3lS5Qb2J78&list=PLKHNByHfHxT6MRKBPaoQqVJcIat-A6FVU&index=116&t=25s) 
 * [Ship of Spirals - Burning Ship Fractal Zoom](https://www.youtube.com/watch?v=Zicl9NCWOnM&t=235s)
-  
+
+
+## Tubes
+* converts ["boring rectangle to into a stunning three dimensional glossy pipe"](https://www.presentation-process.com/powerpoint-gradients-3D.html)  
 
 
 
@@ -728,27 +731,27 @@ Tubes:
 
 
 
-## GraySqrt colormap
-![](./images/606.png "GraySqrt gradient ( colormap)")  
-![](./images/6.png "RGB profiles of the GraySqrt colormap")  
+## Gray Sqrt colormap
+![](./images/Sqrt_no.png "GraySqrt gradient ( colormap)")  
+![](./images/Sqrt_no_2D.png "RGB profiles of the GraySqrt colormap")  
 
-c function = GiveGrayColorSqrt from [p.c file](./src/p.c)  
-
+Steps:  
+![](./images/Sqrt_steps.png "GraySqrt gradient ( colormap)")  
+![](./images/Sqrt_steps_2D.png "RGB profiles of the GraySqrt colormap")  
 
 Gradient can be inverted and joined, which converts ["boring rectangle to into a stunning three dimensional glossy pipe"](https://www.presentation-process.com/powerpoint-gradients-3D.html):
 
-![](./images/613.png "wave (composite) GraySqrt gradient ( colormap)")  
-![](./images/13.png "RGB profiles of the wave (composite) GraySqrt colormap")  
-
-c function = GiveGrayColorSqrtWave from [p.c file](./src/p.c)  
+![](./images/Sqrt_tubes.png "GraySqrt gradient ( colormap)")  
+![](./images/Sqrt_tubes_2D.png "RGB profiles of the GraySqrt colormap")  
+  
 
 
 ## Green colormap
-![](./images/607.png "Green gradient ( colormap)")  
-![](./images/7.png "RGB profiles of the Green colormap")  
+![](./images/Green_no.png "Green gradient ( colormap)")  
+![](./images/Green_no_2D.png "RGB profiles of the Green colormap")  
 
 
-c function = GiveColorGreen from [p.c file](./src/p.c)  
+
 
 ![](./images/julia85.png "Example of use Green gradient ( colormap)")  
 
@@ -774,12 +777,18 @@ void GiveColorGreen(double position, double c[]){
   c[2] = 0; // B	
 }
 ```
+Steps:  
+![](./images/Green_steps.png "Green gradient ( colormap)")  
+![](./images/Green_steps_2D.png "RGB profiles of the Green colormap")  
 
+Tubes:  
+![](./images/Green_tubes.png "Green gradient ( colormap)")  
+![](./images/Green_tubes_2D.png "RGB profiles of the Green colormap")  
 
 
 ##  Smooth CoolWarm diverging colormap 
-![](./images/609.png "CoolWarm diverging gradient ( colormap)")  
-![](./images/9.png "RGB profiles of the CoolWarm colormap")  
+![](./images/CoolWarm_no.png "CoolWarm diverging gradient ( colormap)")  
+![](./images/CoolWarm_no_2D.png "RGB profiles of the CoolWarm colormap")  
 ![](./images/coolwarm3dRGB_60_75.png "3D RGB profile")
 
 
@@ -789,8 +798,16 @@ Description by [Kenneth Moreland ](http://www.kennethmoreland.com/color-advice/)
 
 
 code:  
-* funcion GiveColorCoolWarm from [p.c](./src/p.c)
+* old c funcion GiveColorCoolWarm from [p.c](./src/p.c)
 * [diverging_map_gnuplot.pal](diverging_map_gnuplot.pal) - gnuplot palette file
+
+Steps:  
+![](./images/CoolWarm_steps.png "CoolWarm diverging gradient ( colormap)")  
+![](./images/CoolWarm_steps_2D.png "RGB profiles of the CoolWarm colormap")  
+
+Tubes:  
+![](./images/CoolWarm_tubes.png "CoolWarm diverging gradient ( colormap)")  
+![](./images/CoolWarm_tubes_2D.png "RGB profiles of the CoolWarm colormap")  
 
 
 
@@ -811,13 +828,25 @@ colour scheme developed by  [Dave Green](http://www.mrao.cam.ac.uk/~dag/CUBEHELI
 * for the display of intensity images (which increases in percieved brightness, and prints as greyscale on black and white postscript devices
 * [with a linear increase or decrease in brightness and some variation in hue](http://seaborn.pydata.org/tutorial/color_palettes.html#sequential-cubehelix-palettes) 
 
-![](./images/617.png "Cubehelix gradient ( colormap)")  
-![](./images/17.png "2D RGB profiles of the cubehelix colormap")  
+![](./images/Cubehelix_no.png "Cubehelix gradient ( colormap)")  
+![](./images/Cubehelix_no_2D.png "2D RGB profiles of the cubehelix colormap")  
 
 
 the colour scheme spirals (as a squashed helix) around the diagonal of the RGB colour cube   
 
 ![](./images/17_3d_60_75_v.png "3D RGB profiles of the cubehelix colormap")  
+
+
+
+Steps:  
+![](./images/Cubehelix_steps.png "Cubehelix gradient ( colormap)")  
+![](./images/Cubehelix_steps_2D.png "2D RGB profiles of the cubehelix colormap")  
+
+Tubes:  
+
+![](./images/Cubehelix_tubes.png "Cubehelix gradient ( colormap)")  
+![](./images/Cubehelix_tubes_2D.png "2D RGB profiles of the cubehelix colormap")  
+
 
 
 See also: 
