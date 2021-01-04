@@ -746,9 +746,9 @@ Gradient can be inverted and joined, which converts ["boring rectangle to into a
   
 
 
-## Green colormap
-![](./images/Green_no.png "Green gradient ( colormap)")  
-![](./images/Green_no_2D.png "RGB profiles of the Green colormap")  
+## GreenCubic colormap
+![](./images/GreenCubic_no.png "Green gradient ( colormap)")  
+![](./images/GreenCubic_no_2D.png "RGB profiles of the Green colormap")  
 
 
 
@@ -778,12 +778,12 @@ void GiveColorGreen(double position, double c[]){
 }
 ```
 Steps:  
-![](./images/Green_steps.png "Green gradient ( colormap)")  
-![](./images/Green_steps_2D.png "RGB profiles of the Green colormap")  
+![](./images/GreenCubic_steps.png "Green gradient ( colormap)")  
+![](./images/GreenCubic_steps_2D.png "RGB profiles of the Green colormap")  
 
 Tubes:  
-![](./images/Green_tubes.png "Green gradient ( colormap)")  
-![](./images/Green_tubes_2D.png "RGB profiles of the Green colormap")  
+![](./images/GreenCubic_tubes.png "Green gradient ( colormap)")  
+![](./images/GreenCubic_tubes_2D.png "RGB profiles of the Green colormap")  
 
 
 ##  Smooth CoolWarm diverging colormap 
