@@ -786,6 +786,26 @@ Tubes:
 ![](./images/GreenCubic_tubes_2D.png "RGB profiles of the Green colormap")  
 
 
+## GreenCubicRoot colormap
+![](./images/GreenCubicRoot_no.png "Green gradient ( colormap)")  
+![](./images/GreenCubicRoot_no_2D.png "RGB profiles of the Green colormap")  
+
+
+Steps:  
+![](./images/GreenCubicRoot_steps.png "Green gradient ( colormap)")  
+![](./images/GreenCubicRoot_steps_2D.png "RGB profiles of the Green colormap")  
+
+Tubes:  
+![](./images/GreenCubicRoot_tubes.png "Green gradient ( colormap)")  
+![](./images/GreenCubicRoot_tubes_2D.png "RGB profiles of the Green colormap")  
+
+
+
+
+
+
+
+
 ##  Smooth CoolWarm diverging colormap 
 ![](./images/CoolWarm_no.png "CoolWarm diverging gradient ( colormap)")  
 ![](./images/CoolWarm_no_2D.png "RGB profiles of the CoolWarm colormap")  
