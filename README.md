@@ -109,8 +109,8 @@ Examples by hue:
     * [RainbowFractalizer](README.md#rainbowfractalizer)
     * [OrangeBlueFractalizer](README.md#rainbowfractalizer)
     * [Fractint default](README.md#default-fractint-map)
-  * monotone lightness
-    * Magma - non monotone
+  * monotone lightness - perceptually uniform
+    * Magma - 
     * [Cubehelix](README.md#cubehelix)
   * diverging ( 2 segments of gradients with monotone lightness)
     * [CoolWarm (smooth diverging )](README.md#smooth-coolwarm-diverging-colormap)
@@ -991,21 +991,46 @@ json files in [src dir](./src/) for [colormeasure ](https://colormeasures.org/vi
 * [ColorMap](https://github.com/alesgenova/colormap) - A flexible library to map numerical values to colors ( opacity and color)
 * [colorgrad](https://github.com/mazznoer/colorgrad)
 * [SciColorMaps](https://github.com/ar1st0crat/SciColorMaps)
+
+
+
 # technical notes
 I'm not an expert in the color, so many errors can be here. If you will find them let me know: issues or [wikibooks](https://en.wikibooks.org/wiki/User_talk:Adam_majewski)
 
 
 
 
-
-
-
-
-
 ## Contributors
 
-are wellcome 
+Program uses code from:
+* GNUPLOT - stdfn.h  Copyright 1986 - 1993, 1998, 2004   Thomas Williams, Colin Kelley 
+* [Linas Vepstas](http://linas.org/art-gallery/index.html)
+* [gnuplotting.org](https://github.com/Gnuplotting/gnuplot-palettes/blob/master/magma.pal)
+* [public domain function by Darel Rex Finley, 2006](alienryderflex.com/hsp.html)
+* 
 
+Program uses idea from : 
+* [fractalizer](http://www.fractalizer.de/en/)
+* 
+
+
+### How to contribute ?
+Contributors are wellcome.   
+
+
+How to do it ( after [darktable](https://github.com/darktable-org/darktable#contributing) ) : 
+* Write a blog about it
+* Create a tutorial for it
+* Help expand the user wiki
+* Answer questions on the user mailing list
+* Share your ideas on the developer mailing list
+* Test releases
+* Review pull requests
+* Start hacking on the program and see developer's guide
+ 
+See also:
+* [darktable developer's-guide](https://github.com/darktable-org/darktable/wiki/Developer's-guide)
+* [darktable  coding-style](https://github.com/darktable-org/darktable/wiki/Developer's-guide#coding-style)
 
   
 # License
