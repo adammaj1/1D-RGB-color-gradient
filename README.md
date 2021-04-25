@@ -40,7 +40,7 @@ What should and what should not do colormap/gradient in [scientific visualisatio
   * ["... obfuscate the data with artifacts that are not in the data and hide important features that are in the data" Kenneth Moreland](http://www.kennethmoreland.com/color-advice/BadColorMaps.pdf) 
   * [prevent significant visual errors, which would otherwise visually distort the underlying data and mislead the reader]()
 
-# Gradient manipulations
+# Continous gradient manipulations
 
 Gradient function:
 * non periodic ( monotone) 
@@ -74,7 +74,9 @@ double ModifyPosition(const double position, const GradientJoiningType GradientJ
 	}
 	return p; // output in [0,1] range
 }
-```    
+```
+
+
 
   
   
@@ -1007,7 +1009,7 @@ Program uses code from:
 * [Linas Vepstas](http://linas.org/art-gallery/index.html)
 * [gnuplotting.org](https://github.com/Gnuplotting/gnuplot-palettes/blob/master/magma.pal)
 * [public domain function by Darel Rex Finley, 2006](alienryderflex.com/hsp.html)
-* 
+* python program by [P. Lutus](http://arachnoid.com) released under the GPL
 
 Program uses idea from : 
 * [fractalizer](http://www.fractalizer.de/en/)
