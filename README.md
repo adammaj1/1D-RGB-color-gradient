@@ -12,7 +12,7 @@ and how to [manipulate them](README.md#gradient-manipulations) ( invert, join, t
 
 # TOC
 * [Introduction](README.md#introduction)
-* Gradient manipulations
+* [Gradient manipulations](README.md#gradient-manipulations)
 * [Examples of continous colour maps/gradients](README.md#examples-of-continous-colour-mapsgradients)
 * [gradient forms](./doc/THEORY.md#gradient-forms)
 * [features of colormaps ( gradients)](./doc/THEORY.md#features-of-colormaps)
@@ -25,7 +25,8 @@ and how to [manipulate them](README.md#gradient-manipulations) ( invert, join, t
 * [colorwheel](./doc/colorwheel.md)
 * [Links](./doc/LINKS.md)
 * [to do](./doc/TODO.md)
-* similar projects
+* [program files](README.md#programs)
+* [similar projects](README.md#similar-projects)
 
 # Introduction
 
@@ -1056,4 +1057,4 @@ git mv -f
 
 
 
-local repo : ?
+local repo : ~/1D-RGB-color-gradient$
