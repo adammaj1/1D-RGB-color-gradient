@@ -43,10 +43,12 @@ What should and what should not do colormap/gradient in [scientific visualisatio
 # Continous gradient manipulations
 
 Gradient function:
-* non periodic ( monotone) 
-* periodic ( non monotone)
-  * [continous](https://en.wikipedia.org/wiki/Continuous_function) ( gives tubes , 3d effect): gradient function can be inverted and joined ( both inverted and not inverted part create one wave), repeat it 
-  * [discontinous with jump](https://en.wikipedia.org/wiki/Classification_of_discontinuities#Jump_discontinuity) -  [step function](https://en.wikipedia.org/wiki/Step_function) , ( gives [steps](https://en.wikipedia.org/wiki/Stairs#Step)): gradient function can be joined without inversion( 2 non inverted parts are joined, each part is one wave), repeat it  
+* monotone (non periodic)
+* non monotone
+  * diverging 
+  * periodic 
+    * [continous](https://en.wikipedia.org/wiki/Continuous_function) ( gives tubes , 3d effect): gradient function can be inverted and joined ( both inverted and not inverted part create one wave), repeat it 
+    * [discontinous with jump](https://en.wikipedia.org/wiki/Classification_of_discontinuities#Jump_discontinuity) -  [step function](https://en.wikipedia.org/wiki/Step_function) , ( gives [steps](https://en.wikipedia.org/wiki/Stairs#Step)): gradient function can be joined without inversion( 2 non inverted parts are joined, each part is one wave), repeat it  
   
 ```c
 double ModifyPosition(const double position, const GradientJoiningType GradientJoining){
