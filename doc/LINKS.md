@@ -34,6 +34,7 @@
 * [mpl colormaps](https://bids.github.io/colormap/)
 
 
+
 ## Photoshop
 * [what-is-the-mathmatical-formula-of-gradient-map](https://community.adobe.com/t5/photoshop/what-is-the-mathmatical-formula-of-gradient-map/td-p/10502214?page=1)
 
@@ -74,7 +75,8 @@
 
 # www
 * [khan academy:  color science by Pixar](https://www.khanacademy.org/partner-content/pixar/color)
-
+* [opencolorio](https://opencolorio.org/)
+* [colour-science.org](https://www.colour-science.org/)
 
 
 # Scientific articles
