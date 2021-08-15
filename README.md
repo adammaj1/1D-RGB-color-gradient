@@ -980,6 +980,7 @@ pal files ( files with gnuplot code, use load command )
 json files in [src dir](./src/) for [colormeasure ](https://colormeasures.org/viewer/)
  
 # similar projects
+* [hsluv-color-gradient](https://github.com/adammaj1/hsluv-color-gradient)
 * [cmlib](https://github.com/titusjan/cmlib) - color map library is a collection of color maps that have been converted to a uniform format ( csv+json)
 * [COLOR RAMP FORMULATOR in js by ](https://github.com/tonton-pixel/color-ramp-formulator) Michel Mariani (tonton-pixel )
 * [ColorRampGenerator](https://github.com/Exerionius/ColorRampGenerator) - to make a color ramp out of the base color ( Sequential Discrete color gradient)
