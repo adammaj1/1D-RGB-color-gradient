@@ -45,8 +45,8 @@ What should and what should not do colormap/gradient in [scientific visualisatio
 Gradient function:
 * monotone (non periodic)
 * non monotone
-  * diverging 
-  * periodic 
+  * diverging = 2 segments of gradients with monotone lightness. Sometimes also called ratio, bipolar, or double-ended color maps. ["A natural usage of this map is the display of some property that has a neutral value and some regions with both “lower” and “higher” values. "](https://tomroelandts.com/articles/the-diverging-color-map-is-the-new-rainbow-color-map)
+  * periodic (wave)
     * [continous](https://en.wikipedia.org/wiki/Continuous_function) ( gives tubes , 3d effect): gradient function can be inverted and joined ( both inverted and not inverted part create one wave), repeat it 
     * [discontinous with jump](https://en.wikipedia.org/wiki/Classification_of_discontinuities#Jump_discontinuity) -  [step function](https://en.wikipedia.org/wiki/Step_function) , ( gives [steps](https://en.wikipedia.org/wiki/Stairs#Step)): gradient function can be joined without inversion( 2 non inverted parts are joined, each part is one wave), repeat it  
   
@@ -1015,7 +1015,7 @@ Program uses code from:
 
 Program uses idea from : 
 * [fractalizer](http://www.fractalizer.de/en/)
-* 
+* [FF: histogram-colouring-is-really-streching-(not-true-histogram)/](http://www.fractalforums.com/kalles-fraktaler/histogram-colouring-is-really-streching-(not-true-histogram)/)
 
 
 ### How to contribute ?
@@ -1086,4 +1086,4 @@ git mv -f
 
 
 
-local repo : ~/1D-RGB-color-gradient$
+local repo : ~/1D-RGB-color-gradient
