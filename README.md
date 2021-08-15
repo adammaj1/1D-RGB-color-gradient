@@ -1016,7 +1016,7 @@ Program uses code from:
 
 Program uses idea from : 
 * [fractalizer](http://www.fractalizer.de/en/)
-* [FF: histogram-colouring-is-really-streching-(not-true-histogram)/](http://www.fractalforums.com/kalles-fraktaler/histogram-colouring-is-really-streching-(not-true-histogram)/)
+* [histogram equalisation](https://en.wikipedia.org/wiki/Histogram_equalization) and  [FF: histogram-colouring-is-really-streching-(not-true-histogram)/](http://www.fractalforums.com/kalles-fraktaler/histogram-colouring-is-really-streching-(not-true-histogram)/)
 
 
 ### How to contribute ?
