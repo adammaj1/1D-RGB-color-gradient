@@ -18,7 +18,21 @@ for file in *.ppm ; do
   echo "$file"
 done
 
- 
+
+printf "delete all ppm files \n"
+rm ./*.ppm
+
 echo OK
 # end
+
+
+echo OK
+
+printf "info about software \n"
+bash --version
+make -v
+gcc --version
+gnuplot --version
+convert -version
+convert -list resource
 

@@ -7,7 +7,7 @@ https://gitlab.com/adammajewski/color_gradient
 
   ./a.out 
 
-  
+  gnuplot plot.gp
 
 
   ===================
@@ -91,10 +91,10 @@ int fMax; // =  sizeof(titles)/sizeof(titles[0]); // 18; // see GiveColor functi
 const char *titles[] = {
 /* multihue */ "RainbowHSV","Linas","Linas2","RainbowFractalizer", "OrangeBlueFractalizer", "RainbowHSP", "HSP", "Magma","Cubehelix", "CoolWarm", 
 /* single hue */ "GreenCubic", "GreenCubicInv", "GreenCubicRoot", "BlueCubicInv", "RedCubicInv", "GreenSin",
-/* gray */ "Linear","Quadratic","Cubic", "CubicInv", "Sqrt", "Root", "Gamma", "LSin", "SinExp", "Sin" , "Smooth"};
+/* gray */ "Linear","Quadratic","Cubic", "CubicInv", "Sqrt", "Root", "Gamma", "LSin", "SinExp", "Sin" , "Smooth", "Tanh"};
 	
 // use s.c program to update enum from arrray	
-typedef enum  {RainbowHSV , Linas , Linas2 , RainbowFractalizer , OrangeBlueFractalizer , RainbowHSP , HSP , Magma , Cubehelix , CoolWarm , GreenCubic , GreenCubicInv, GreenCubicRoot, BlueCubicInv, RedCubicInv, GreenSin, Linear , Quadratic , Cubic , CubicInv, Sqrt , Root,  Gamma , LSin , SinExp , Sin , Smooth } ColorTransferFunctionType; 
+typedef enum  {RainbowHSV , Linas , Linas2 , RainbowFractalizer , OrangeBlueFractalizer , RainbowHSP , HSP , Magma , Cubehelix , CoolWarm , GreenCubic , GreenCubicInv, GreenCubicRoot, BlueCubicInv, RedCubicInv, GreenSin, Linear , Quadratic , Cubic , CubicInv, Sqrt , Root,  Gamma , LSin , SinExp , Sin , Smooth, Tanh } ColorTransferFunctionType; 
 
 
 
@@ -347,6 +347,22 @@ double GiveSin(const double position){
 
 
 
+/*
+ tanh = he hyperbolic tangent of x.
+*/
+double GiveTanh(const double position){
+
+	// input in [0,1] !!!!!
+	
+	
+	
+	
+	// map range from [0,1] to  [-pi,pi] = angle from -pi to pi = wave  ascending = from black to white
+	double angle = 6.0*position - 3.0;
+	double s = (1.0+ tanh(angle))/2.0;  // change also y range
+  	return s;
+
+}
 
 
 
@@ -1214,9 +1230,9 @@ void GiveRGB_Gray(const double position, const ColorTransferFunctionType ColorTr
 		case SinExp : { s = GiveSinExp(p); break; } 
 		
 		case Smooth : { s = (3.0 -2.0*p)*p*p; break; } // Smooth
-	/* https://www.youtube.com/watch?v=60VoL-F-jIQ  Smoothstep: The most useful function by The Art of Code  = sinusoidal wave from 0.0 to 1.0 , gives similar effect as GraySine */
+		/* https://www.youtube.com/watch?v=60VoL-F-jIQ  Smoothstep: The most useful function by The Art of Code  = sinusoidal wave from 0.0 to 1.0 , gives similar effect as GraySine */
 
-		
+		case Tanh : { s = GiveTanh(p); break; } // Smooth
 		
 		default:{ }
 	}
@@ -1287,8 +1303,9 @@ int GiveColor(const double position, const ColorTransferFunctionType ColorTransf
   		case Gamma: 		
   		case Sin: 		
   		case LSin: 		
-  		case SinExp: 	
-  		case Smooth: 	{GiveRGB_Gray(p, ColorTransferFunction, rgb); break;}
+  		case SinExp: 
+  		case Smooth:	
+  		case Tanh: 	{GiveRGB_Gray(p, ColorTransferFunction, rgb); break;}
   
     		default:{}
   	}

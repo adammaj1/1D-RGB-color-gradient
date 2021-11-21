@@ -8,7 +8,7 @@ set terminal png
 # gnuplot array is numbered from 1 to words(array), not like c arrays
 # use s.c program to update lists from titles and sGradientJoiningType arrays
 
-titles = "RainbowHSV  Linas  Linas2  RainbowFractalizer  OrangeBlueFractalizer  RainbowHSP  HSP  Magma  Cubehelix  CoolWarm GreenCubic GreenCubicInv GreenCubicRoot BlueCubicInv RedCubicInv GreenSin Linear  Quadratic  Cubic  CubicInv Sqrt  Root Gamma  LSin  SinExp  Sin  Smooth  "
+titles = "RainbowHSV  Linas  Linas2  RainbowFractalizer  OrangeBlueFractalizer  RainbowHSP  HSP  Magma  Cubehelix  CoolWarm GreenCubic GreenCubicInv GreenCubicRoot BlueCubicInv RedCubicInv GreenSin Linear  Quadratic  Cubic  CubicInv Sqrt  Root Gamma  LSin  SinExp  Sin  Smooth  Tanh"
 
 sGradientJoiningType = "no  steps  tubes  "
 
