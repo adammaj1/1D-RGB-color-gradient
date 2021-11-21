@@ -128,6 +128,7 @@ Examples by hue:
   * NL3 
   * Sqrt 
   * Gamma 
+  * Tanh
 * ``single hue``
   * [Green](README.md#green-colormap) - monotne lightness
   * HSP 
@@ -165,7 +166,8 @@ Examples by hue:
   		case Sin: 		
   		case LSin: 		
   		case SinExp: 	
-  		case Smooth: 	{GiveRGB_Gray(p, ColorTransferFunction, rgb); break;}  
+  		case Smooth: 	
+  		Tanh : {GiveRGB_Gray(p, ColorTransferFunction, rgb); break;}  
 ```
   
   
@@ -827,14 +829,26 @@ code:
 * [diverging_map_gnuplot.pal](diverging_map_gnuplot.pal) - gnuplot palette file
 
 Steps:  
-![](./images/CoolWarm_steps.png "CoolWarm diverging gradient ( colormap)")  
-![](./images/CoolWarm_steps_2D.png "RGB profiles of the CoolWarm colormap")  
+![](./images/CoolWarm_steps.png "Tanh gradient ( colormap)")  
+![](./images/CoolWarm_steps_2D.png "RGB profiles of the Tanh colormap")  
 
 Tubes:  
 ![](./images/CoolWarm_tubes.png "CoolWarm diverging gradient ( colormap)")  
 ![](./images/CoolWarm_tubes_2D.png "RGB profiles of the CoolWarm colormap")  
 
 
+
+## Tanh
+![](./images/Tanh_no.png "Tanh gradient ( colormap)")  
+![](./images/Tanh_no_2D.png "RGB profiles of the Tanh colormap")  
+
+Steps:  
+![](./images/Tanh_steps.png "Tanh gradient ( colormap)")  
+![](./images/Tanh_steps_2D.png "RGB profiles of the Tanh colormap")  
+
+Tubes:  
+![](./images/Tanh_tubes.png "Tanh gradient ( colormap)")  
+![](./images/Tanh_tubes_2D.png "RGB profiles of the Tanh colormap")  
 
 
 
