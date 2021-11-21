@@ -752,6 +752,18 @@ Gradient can be inverted and joined, which converts ["boring rectangle to into a
 ![](./images/Sqrt_tubes_2D.png "RGB profiles of the GraySqrt colormap")  
   
 
+## Tanh
+![](./images/Tanh_no.png "Tanh gradient ( colormap)")  
+![](./images/Tanh_no_2D.png "RGB profiles of the Tanh colormap")  
+
+Steps:  
+![](./images/Tanh_steps.png "Tanh gradient ( colormap)")  
+![](./images/Tanh_steps_2D.png "RGB profiles of the Tanh colormap")  
+
+Tubes:  
+![](./images/Tanh_tubes.png "Tanh gradient ( colormap)")  
+![](./images/Tanh_tubes_2D.png "RGB profiles of the Tanh colormap")  
+
 
 ## GreenCubic colormap
 ![](./images/GreenCubic_no.png "Green gradient ( colormap)")  
@@ -837,18 +849,6 @@ Tubes:
 ![](./images/CoolWarm_tubes_2D.png "RGB profiles of the CoolWarm colormap")  
 
 
-
-## Tanh
-![](./images/Tanh_no.png "Tanh gradient ( colormap)")  
-![](./images/Tanh_no_2D.png "RGB profiles of the Tanh colormap")  
-
-Steps:  
-![](./images/Tanh_steps.png "Tanh gradient ( colormap)")  
-![](./images/Tanh_steps_2D.png "RGB profiles of the Tanh colormap")  
-
-Tubes:  
-![](./images/Tanh_tubes.png "Tanh gradient ( colormap)")  
-![](./images/Tanh_tubes_2D.png "RGB profiles of the Tanh colormap")  
 
 
 
