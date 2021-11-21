@@ -122,13 +122,16 @@ Examples by hue:
     * [arctic](README.md#arctic)
 * ``NoHue = Gray``
   * Linear 
+  * sin
+  * LSin
   * SinExp
   * [GraySine](README.md#graysine-effect-of-a-sine-wave) ( similar to SmoothStep = 25 and SmoothSteps= 26 )
-  * NL2 
-  * NL3 
-  * Sqrt 
-  * Gamma 
-  * Tanh
+  * [NL2 = quadratic](README.md#gray-nl3-cubic-colormap) 
+  * [Cubic = NL3](README.md#gray-nl3-cubic-colormap)
+  * [CubicInv](README.md#cubicinv)
+  * [Sqrt](README.md#gray-sqrt-colormap) 
+  * [Gamma](README.md#graygamma) 
+  * [Tanh](README.md#tanh)
 * ``single hue``
   * [Green](README.md#green-colormap) - monotne lightness
   * HSP 
