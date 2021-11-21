@@ -986,6 +986,9 @@ python programs
 * [simplest_regression.py](./src/simplest_regression.py) - python program by [P. Lutus](http://arachnoid.com) released under the GPL
 
 
+make files
+* [Makefile](./src/Makefile) : compiles d.c, run it and plot.gp 
+
 
 ### palettes
 pal files ( files with gnuplot code, use load command )
