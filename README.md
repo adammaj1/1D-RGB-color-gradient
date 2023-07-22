@@ -1001,6 +1001,10 @@ json files in [src dir](./src/) for [colormeasure ](https://colormeasures.org/vi
  
 # similar projects
 * [hsluv-color-gradient](https://github.com/adammaj1/hsluv-color-gradient)
+* [Wave form or shaping functions](https://github.com/adammaj1/Waveform)
+* [Shaping functions in GLSL by Patricio Gonzalez Vivo & Jen Lowe](https://thebookofshaders.com/05/)
+* [curves by kynd.inf ](https://www.flickr.com/photos/kynd/9546075099/in/photostream/)
+* [GraphToy by Iñigo Quilez = a tool to visualize GLSL functions in WebGL](https://graphtoy.com/)
 * [cmlib](https://github.com/titusjan/cmlib) - color map library is a collection of color maps that have been converted to a uniform format ( csv+json)
 * [COLOR RAMP FORMULATOR in js by ](https://github.com/tonton-pixel/color-ramp-formulator) Michel Mariani (tonton-pixel )
 * [ColorRampGenerator](https://github.com/Exerionius/ColorRampGenerator) - to make a color ramp out of the base color ( Sequential Discrete color gradient)
@@ -1062,6 +1066,9 @@ See also:
 
 [licence](LICENCE)
 
+# Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=adammaj1/1D-RGB-color-gradient&type=Date)](https://star-history.com/#adammaj1/1D-RGB-color-gradient&Date)
 
 
 # Git
