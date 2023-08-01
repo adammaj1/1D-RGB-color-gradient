@@ -1001,7 +1001,7 @@ json files in [src dir](./src/) for [colormeasure ](https://colormeasures.org/vi
  
 # similar projects
 * [hsluv-color-gradient](https://github.com/adammaj1/hsluv-color-gradient)
-* [Wave form or shaping functions](https://github.com/adammaj1/Waveform)
+* [Wave form or shaping functions or 1D gray gradient](https://github.com/adammaj1/Waveform)
 * [Shaping functions in GLSL by Patricio Gonzalez Vivo & Jen Lowe](https://thebookofshaders.com/05/)
 * [curves by kynd.inf ](https://www.flickr.com/photos/kynd/9546075099/in/photostream/)
 * [GraphToy by Iñigo Quilez = a tool to visualize GLSL functions in WebGL](https://graphtoy.com/)
