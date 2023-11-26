@@ -614,7 +614,10 @@ Examples of use :
 
 
 
-## Gray LSine: effect of [a sine wave superimposed on a ramp function](https://peterkovesi.com/projects/colourmaps/colourmaptestimage.html)
+## Gray LSine: effect of a sine wave superimposed on a ramp function
+
+It is based on [the The Colour Map Test Image by Peter Kovesi](https://colorcet.com/testimage/index.html)
+
 
 ![](./images/LSin_no.png "GrayLSine gradient ( colormap)")  
 ![](./images/LSin_no_2D.png "RGB profiles of the GrayLSine colormap")    
@@ -1020,7 +1023,7 @@ json files in [src dir](./src/) for [colormeasure ](https://colormeasures.org/vi
 * [ColorMap](https://github.com/alesgenova/colormap) - A flexible library to map numerical values to colors ( opacity and color)
 * [colorgrad](https://github.com/mazznoer/colorgrad)
 * [SciColorMaps](https://github.com/ar1st0crat/SciColorMaps)
-
+* [Easing Gradients](https://larsenwork.com/easing-gradients/): CSS gradients based on the [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function)
 
 
 # technical notes
